@@ -1,7 +1,9 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+/*@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");*/
 /*@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");*/
-
+/*@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700);*/
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /* Basic Style Treatment */
 
@@ -12,6 +14,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
@@ -34,12 +37,14 @@ body.is-loading *:after {
 }
 
 body,input,select,textarea {
-	color: #fff;
-	font-family: "Open Sans", Helvetica, sans-serif;
+	color: #1e1d1d;
+/*	font-family: "Open Sans", Helvetica, sans-serif;*/
+	font-family: 'Lora', serif;
+/*	font-family: 'Montserrat', sans-serif;*/
 	font-size: 15pt;
 	font-weight: 400;
-	letter-spacing: 0.075em;
-	line-height: 1.65em;
+	letter-spacing: 0.015em;
+	line-height: 1.5;
 }
 
 @media screen and (max-width: 1680px) {
@@ -88,12 +93,11 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	color: #fff;
-	font-weight: 800;
-	letter-spacing: 0.225em;
-	line-height: 1em;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
 	margin: 0 0 1em 0;
 	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
@@ -855,9 +859,11 @@ button.icon:before,
 input[type="button"].special,
 button.special,
 .button.special {
+	position: relative;
 	background-color: #ed4933;
 	box-shadow: none !important;
 	color: #ffffff !important;
+	z-index: 1;
 }
 
 input[type="button"].special:hover,
@@ -1664,6 +1670,12 @@ body.is-menu-visible #menu {
 	overflow: hidden;
 	position: relative;
 	text-align: center;
+	position: relative;
+  left: 0;
+  top: 50%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
 }
 
 #banner h2 {
@@ -1674,7 +1686,7 @@ body.is-menu-visible #menu {
 	opacity: 1;
 	padding: 0.35em 1em;
 	position: relative;
-	z-index: 1;
+	z-index:7;
 }
 
 #banner h2:before,
@@ -1702,15 +1714,18 @@ body.is-menu-visible #menu {
 #banner p {
 	letter-spacing: 0.225em;
 	text-transform: uppercase;
+	z-index: 1;
+	position: relative;
 }
 
 #banner p a {
 	color: inherit;
+	z-index: 1;
 }
 
 #banner .more {
 	transition: transform 0.75s ease, opacity 0.75s ease;
-	transition-delay: 3.5s;
+	transition-delay: 0.5s;
 	transform: translateY(0);
 	border: none;
 	bottom: 0;
@@ -1719,16 +1734,20 @@ body.is-menu-visible #menu {
 	height: 8.5em;
 	left: 50%;
 	letter-spacing: 0.225em;
-	margin-left: -8.2em;
+/*	margin-left: -8.2em;*/
 	opacity: 1;
 	outline: 0;
 	padding-left: 0.225em;
 	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
-	width: 16em;
+/*	width: 16em;*/
 	z-index: 1;
 }
+
+
+
+/* --- */
 
 #banner .more:after {
 	background-image: url("images/down-arrow.svg");
@@ -2118,6 +2137,73 @@ body.is-loading #banner:after {
 		padding: 3em 2em 1em 2em;
 	}
 }
+
+
+
+
+/* ---- particles.js container ---- */
+
+
+
+canvas {
+  display: block;
+  vertical-align: text-top;
+}
+
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+	z-index:1;
+}
+
+
+
+
+/* ---- stats.js ---- */
+
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  text-align: left;
+  line-height: 14px;
+  padding-bottom: 2px;
+	z-index: 1;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+
 
 
 /* Page Landing */
