@@ -1,0 +1,22 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "my website",
+  "scripts": {
+		"start": "budo --live --verbose --port 3000 --open"
+  }, 
+	"devDependencies": {
+		"budo": "^7.0.0"
+	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trpham/me.git"
+  },
+  "keywords": [],
+  "author": "Nathan Pham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trpham/me/issues"
+  },
+  "homepage": "https://github.com/trpham/me#readme"
+}
