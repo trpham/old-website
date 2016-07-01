@@ -87,6 +87,13 @@
 				}
 			});
 		}
+		
+				// Scrolly.
+ 		$('.scrolly')
+ 			.scrolly({
+ 				speed: 1500,
+ 				offset: $header.outerHeight()
+ 			});
 
 
 		// Menu.
@@ -243,15 +250,11 @@ particlesJS("particles-js", {
 	"retina_detect": true
 });
 
-
 $(function () {
 	$('#two').poptrox({
     popupPadding: 0
 	});
 });
-
-	
-
 
 var count_particles, stats, update;
 stats = new Stats;

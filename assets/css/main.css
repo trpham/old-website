@@ -1635,7 +1635,7 @@ body.is-menu-visible #menu {
 
 #header nav > ul > li > a {
 	border: 0;
-	color: #000;
+	color: #fff;
 	display: block;
 	font-size: 0.8em;
 	letter-spacing: 0.225em;
@@ -1643,13 +1643,18 @@ body.is-menu-visible #menu {
 	text-transform: uppercase;
 }
 
-#header nav > ul > li > a.menuToggle {
+#header.alt nav > ul > li > a.menuToggle {
 	outline: 0;
 	position: relative;
+	color:#1e1d1d;
+}
+
+#header.alt nav > ul > li > a.menuToggle:after {
+background-image: url("images/bars.svg");
 }
 
 #header nav > ul > li > a.menuToggle:after {
-	background-image: url("images/bars.svg");
+	background-image: url("images/bars-white.svg");
 	background-position: right center;
 	background-repeat: no-repeat;
 	content: '';
@@ -1797,7 +1802,7 @@ body.is-menu-visible #menu {
 #banner .more:after {
 	background-image: url("images/down-arrow.svg");
 	background-position: center;
-	background-color: black;
+/*	background-color: black;*/
 	background-repeat: no-repeat;
 	background-size: contain;
 	bottom: 4em;

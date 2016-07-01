@@ -7,28 +7,29 @@
 </head>
 
 <body>
-	
+
 	<section class="wrapper style1 project">
-		
+
 		<div class="inner">
 			<header class="major">
 				<h2>Processor Design</h2>
 				<p>A 32-bit two-cycle processor</p>
-				</header>
-			
-				<p>Your processor will have a 2-stage pipeline:
+			</header>
 
-Instruction Fetch: An instruction is fetched from the instruction memory.
-Execute: The instruction is decoded, executed, and committed (written back). This is a combination of the remaining stages of a normal MIPS pipeline.
-					Your completed processor should implement the  Instruction Set Architecture (ISA) using a two-cycle pipeline.
-					Your processor will contain an instance of yourRegister Files, ALUArithmetic Logic Unit (ALU) [hide], Data Memory, and Register File. You are also responsible for constructing the entire datapath and control from scratch. 
-					Your processor will get its program from the processor harness we have provided in run.circ. It will send the address of instruction memory it wants to access to the harness through an output, and accept the instruction at that address as an input. 
+			<p>The processor has a 2-stage pipeline:</p>
 
-		</p>
-			
-			</div>
+			<li>Instruction Fetch: Instruction is fetched from instruction memory.</li>
+			<li>Execute: The instruction is decoded, executed, and committed (written back). This is a combination of the remaining stages of a normal MIPS pipeline.</li>
 
-		
+			<p>With that two-cycle pipline, the processor implements the Instruction Set Architecture (ISA) using a two-cycle pipeline. It contains an instance Arithmetic Logic Unit (ALU), Data Memory, and Register File with the entire datapath and control.</p>
+
+			<p>The processor gets its program from the processor harness we have provided in run.circ. It send the address of instruction memory it wants to access to the harness through an output, and accept the instruction at that address as an input.
+
+			</p>
+
+		</div>
+
+
 	</section>
 </body>
 
