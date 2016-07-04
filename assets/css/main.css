@@ -14,7 +14,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
@@ -23,12 +22,22 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 
 body {
 	line-height: 1;
-		font-family: 'Lora', serif;
+	font-family: 'Lora', serif;
 /*	font-family: 'Montserrat', sans-serif;*/
+}
+
+ol, ul {
+	list-style: none;
 }
 
 body {
 /*	background: #0000ff;*/
+	-webkit-text-size-adjust: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 body.is-loading *,
@@ -2079,10 +2088,12 @@ canvas {
 /* Page Landing */
 
 body.landing #page-wrapper {
+/*
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+*/
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -2100,10 +2111,12 @@ body.is-mobile.landing #page-wrapper {
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
+/*
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+*/
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
