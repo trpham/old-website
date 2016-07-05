@@ -486,7 +486,7 @@ textarea {
 .image {
 	border-radius: 3px;
 	border: 0;
-	display: inline-block;
+/*	display: inline-block;*/
 	position: relative;
 }
 
@@ -540,7 +540,7 @@ textarea {
 
 .image img {
 	border-radius: 5px;
-	display: block;
+	max-width: 100%;
 }
 
 .image.fit {
