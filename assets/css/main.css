@@ -2079,12 +2079,20 @@ body.is-loading #banner:after {
 
 
 canvas {
+	display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
   display: block;
   vertical-align: text-top;
 }
 
 
 #particles-js {
+	display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
