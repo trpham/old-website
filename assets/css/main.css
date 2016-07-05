@@ -2113,6 +2113,10 @@ canvas {
   line-height: 14px;
   padding-bottom: 2px;
 	z-index: 1;
+	display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
 }
 
 .js-count-particles {
