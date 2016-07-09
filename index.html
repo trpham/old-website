@@ -33,11 +33,11 @@
 							<ul>
 								<h2>Nathan T. Pham</h2>
 								<p>Young, ambitious programmer, senior EECS major at UC Berkeley</p>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">About Me</a></li>
-								<li><a href="elements.html">Projects</a></li>
-								<li><a href="#">Resume</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#banner">Home</a></li>
+								<li><a href="#one about">About Me</a></li>
+								<li><a href="#one resume">Resume</a></li>
+								<li><a href="#two projects">Projects</a></li>
+								<li><a href="#footer">Contact</a></li>
 							</ul>
 						</div>
 					</li>
@@ -48,7 +48,6 @@
 
 		
 <div id="particles-js"></div>
-<div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
 		
 		<!-- Welcome Page -->		
 
@@ -56,17 +55,15 @@
 		
 
 		<section id="banner">
-			
 				<div class="inner">
 				<h2>Nathan T. Pham</h2>
-				<p>Software Enginner<br />Photographer<br />In-room DJ</p>
+				<p>Software Enginner<br/>Seasonal Photographer<br/>The Crazy One</p>
 				<ul class="actions">
-					<li><a href="#" class="button special">about-Me</a></li>
-					<li><a href="#" class="button special">resumé</a></li>
+					<li><a href="#one about" class="button special">about-Me</a></li>
+					<li><a href="resume.pdf" class="button special">resumé</a></li>
 				</ul>
 				<a href="#one" class="more scrolly"></a>
 				</div>
-
 		</section>
 		
 
@@ -80,7 +77,7 @@
 
 
 		<!-- About Me -->
-		<section id="one" class="wrapper style1 special">
+		<section id="one about" class="wrapper style1 special">
 			<div class="inner">
 
 				<header class="major">
@@ -100,12 +97,12 @@
 		
 		
 		<!-- Resume -->
-		<section id="one" class="wrapper style5 special">
+		<section id="one resume" class="wrapper style5 special">
 			<div class="inner">
 				
 				<header class="major">
 					<h2>Resume</h2>
-					<p>For a PDF resume, click here.</p>
+					<p>For a PDF resume, click <a href="resume.pdf"><u>here</u></a>.</p>
 				</header>
 				
 				
@@ -230,7 +227,7 @@
 
 
 		<!-- Projects -->
-		<section id="two" class="wrapper style1 special">
+		<section id="two projects" class="wrapper style1 special">
 			<div class="inner">
 				
 				
@@ -281,76 +278,24 @@
 				
 
 
-
-		<!-- Contact Infomation -->
-		<section id="one" class="wrapper style5 special">
-			<div class="inner">
-
-				
-				<header class="major">
-					<h2>Contact Me</h2>
-					<p>Let's talk about anything!</p>
-				</header>
-
-				<!-- Contact -->
-				<div class="split style1">
-					
-					<!-- Left Half -->
-					<form method="post" action="#">
-						<div class="field half first">
-							<label for="name">What's your name?</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">What's Your Email?</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">What do you want to discussf</label>
-							<textarea name="message" id="message" rows="5"></textarea>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button send">Send Message</a></li>
-						</ul>
-					</form>
-					<!-- End Left Half -->
-
-					<!-- Right Half -->
-					<section>
-						<ul class="labeled-icons">
-							<li><h3 class="icon fa-home"><span class="label"></span></h3><a href="#">San Francisco Bay Area</a></li>
-<!--							<li><h3 class="icon fa-mobile"><span class="label"></span></h3>(510) 508 2054</li>-->
-							<li><h3 class="icon fa-envelope-o"><span class="label"></span></h3>
-								<a href="#">phamcse@berkeley.edu</a></li>
-						</ul>
+		
+						<!-- Footer -->
+					<footer id="footer">
 						<ul class="icons">
-
-<!--							<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>-->
-							<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/trpham?tab=repositories" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/phamcse" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:phamcse@berkeley.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
-					</section>
-					<!-- End Right Half -->
-					
-				</div>
-				<!-- End Contact -->
-
-
-			</div>
-		</section>
-		<!-- End Contact Infomation -->
-
+					</footer>
 		
-		
-		
-		
-		<section id="footer">
+		<section id="footer" class="footer-copyright">
 			<ul class="copyright">
-				<li>&copy; Nathan T. Pham 2016</li>
+					<p>developed with <i class="fa fa-code"></i> and <i class="fa fa-heart"></i> in Berkeley, CA<br/>&copy; Nathan T. Pham 2016</p>
 			</ul>
 		</section>
+		
+		
+
 
 		
 		
@@ -362,8 +307,6 @@
 	<script src="assets/js/jquery.poptrox.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<!-- stats.js lib -->
 	<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 	<script src="assets/js/particles.min.js"></script>
 	<script src="assets/js/skel.min.js"></script>
