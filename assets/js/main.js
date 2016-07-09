@@ -250,3 +250,9 @@ particlesJS("particles-js", {
 	},
 	"retina_detect": true
 });
+
+ $(function () {
+ 	$('#two').poptrox({
+     popupPadding: 0
+ 	});
+ });
