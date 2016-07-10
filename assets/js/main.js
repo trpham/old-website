@@ -143,7 +143,7 @@
 particlesJS("particles-js", {
 	"particles": {
 		"number": {
-			"value": 50,
+			"value": 20,
 			"density": {
 				"enable": !0,
 				"value_area": 200
@@ -168,7 +168,7 @@ particlesJS("particles-js", {
 			}
 		},
 		"opacity": {
-			"value": 0.6,
+			"value": 0.5,
 			"random": !1,
 			"anim": {
 				"enable": !1,
@@ -224,7 +224,7 @@ particlesJS("particles-js", {
 		},
 		"modes": {
 			"grab": {
-				"distance": 140,
+				"distance": 50,
 				"line_linked": {
 					"opacity": 1
 				}
@@ -253,6 +253,6 @@ particlesJS("particles-js", {
 
  $(function () {
  	$('#two').poptrox({
-     popupPadding: 0
+     popupPadding: 0,
  	});
  });
