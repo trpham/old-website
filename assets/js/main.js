@@ -8,6 +8,8 @@
 		// Parallax factor (lower = more intense, higher = less intense).
 		parallaxFactor: 20
 	};
+	
+	$('.fancybox').fancybox();
 
 	skel
 		.breakpoints({
@@ -251,8 +253,8 @@ particlesJS("particles-js", {
 	"retina_detect": true
 });
 
- $(function () {
- 	$('#two').poptrox({
-     popupPadding: 0,
- 	});
- });
+// $(function () {
+// 	$('#two').poptrox({
+//     popupPadding: 0,
+// 	});
+// });
