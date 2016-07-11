@@ -1013,6 +1013,7 @@ button.special,
 	color: #1e1d1d !important;
 	z-index: 1;
 	border: 1px solid #1e1d1d;
+	-webkit-transform: translate3d(0,0,0)
 }
 
 input[type="button"].special:hover,
@@ -1584,7 +1585,7 @@ body.is-loading .wrapper.fade-up > .inner {
 	top: 0;
 	width: 100%;
 /*	z-index: 10001;*/
-	z-index: 11;
+	z-index: 10001;
 }
 
 
@@ -1611,7 +1612,7 @@ body.is-loading .wrapper.fade-up > .inner {
 	top: 0;
 	width: 25em;
 /*	z-index: 10002;*/
-	z-index: 1;
+	z-index: 10002;
 }
 
 #menu ul {
@@ -1701,7 +1702,7 @@ body.is-menu-visible #menu {
 	top: 0;
 	width: 100%;
 /*	z-index: 10000;*/
-	z-index: 10;
+	z-index: 10000;
 }
 
 #header h1 {
@@ -1833,6 +1834,8 @@ background-image: url("images/bars.svg");
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+/*	z-index: 10020;*/
+	
 }
 
 #banner h2 {
@@ -1853,6 +1856,9 @@ background-image: url("images/bars.svg");
 	font-family: 'Montserrat', sans-serif;
 	color: #1e1d1d;
 	text-transform:uppercase;
+/*	overflow-y: auto;*/
+	-webkit-transform: translate3d(0,0,0);
+	
 }
 
 #banner h2:before,
@@ -1889,11 +1895,13 @@ background-image: url("images/bars.svg");
 	z-index: 1;
 	position: relative;
 	color: #1e1d1d;
+	-webkit-transform: translate3d(0,0,0);
 }
 
 #banner p a {
 	color: inherit;
 	z-index: 1;
+	-webkit-transform: translate3d(0,0,0);
 }
 
 #banner .more {
@@ -1916,6 +1924,7 @@ background-image: url("images/bars.svg");
 	text-transform: uppercase;
 /*	width: 16em;*/
 	z-index: 1;
+	-webkit-transform: translate3d(0,0,0)
 }
 
 
@@ -2150,6 +2159,7 @@ canvas {
 	display: flex;
   display: block;
   vertical-align: text-top;
+/*	-webkit-transform: translate3d(0,0,0);*/
 }
 
 
@@ -2167,6 +2177,7 @@ canvas {
   background-size: cover;
   background-position: 100% 50%;
 	z-index:1;
+	
 }
 
 
