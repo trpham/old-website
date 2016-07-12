@@ -9,7 +9,9 @@
 		parallaxFactor: 20
 	};
 	
-	$('.fancybox').fancybox();
+	$('.fancybox').fancybox({
+		padding : 0,
+	});
 
 	skel
 		.breakpoints({
