@@ -13,7 +13,7 @@
 		<div class="inner">
 			<header class="major">
 				<h2>Processor Design</h2>
-				<p>A 32-bit two-cycle processor</p>
+				<p>A 32-bit Two-Cycle Processor</p>
 			</header>
 
 			<p>The processor has a 2-stage pipeline:</p>
@@ -22,13 +22,12 @@
 			<li>Execute: The instruction is decoded, executed, and committed (written back). This is a combination of the remaining stages of a normal MIPS pipeline.</li>
 
 			<p>With that two-cycle pipline, the processor implements the Instruction Set Architecture (ISA) using a two-cycle pipeline. It contains an instance Arithmetic Logic Unit (ALU), Data Memory, and Register File with the entire datapath and control.</p>
-
+			
+			<div class="image"><img src="../images/cpu-design.jpg" alt="" /></div>
+			
 			<p>The processor gets its program from the processor harness we have provided in run.circ. It send the address of instruction memory it wants to access to the harness through an output, and accept the instruction at that address as an input.
-
 			</p>
-
 		</div>
-
 
 	</section>
 </body>

@@ -1,11 +1,6 @@
 (function ($) {
-
 	var settings = {
-
-		// Parallax background effect?
 		parallax: true,
-
-		// Parallax factor (lower = more intense, higher = less intense).
 		parallaxFactor: 20
 	};
 	
@@ -30,7 +25,6 @@
 			$banner = $('#banner'),
 			$header = $('#header');
 
-		// Disable animations/transitions until the page has loaded.
 		$body.addClass('is-loading');
 
 		$window.on('load', function () {
@@ -39,7 +33,6 @@
 			}, 100);
 		});
 
-		// Mobile?
 		if (skel.vars.mobile)
 			$body.addClass('is-mobile');
 		else
@@ -51,10 +44,8 @@
 				$body.addClass('is-mobile');
 			});
 
-		// Fix: Placeholder polyfill.
 		$('form').placeholder();
 
-		// Prioritize "important" elements on medium.
 		skel.on('+medium -medium', function () {
 			$.prioritize(
 				'.important\\28 medium\\29',
@@ -62,13 +53,6 @@
 			);
 		});
 
-		// Header
-
-		// Parallax background
-
-		//////////
-
-		// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
 		if (skel.vars.browser == 'ie' || skel.vars.mobile)
 			settings.parallax = false;
 
@@ -92,15 +76,12 @@
 			});
 		}
 		
-				// Scrolly.
  		$('.scrolly')
  			.scrolly({
  				speed: 1500,
  				offset: $header.outerHeight()
  			});
 
-
-		// Menu.
 		$('#menu')
 			.append('<a href="#menu" class="close"></a>')
 			.appendTo($body)
@@ -254,9 +235,3 @@ particlesJS("particles-js", {
 	},
 	"retina_detect": true
 });
-
-// $(function () {
-// 	$('#two').poptrox({
-//     popupPadding: 0,
-// 	});
-// });
