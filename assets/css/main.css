@@ -532,7 +532,6 @@ textarea {
 
 .image:before {
 	transition: opacity 0.2s ease-in-out;
-	background: url("images/overlay.png");
 	border-radius: 0.35em;
 	content: '';
 	display: block;
@@ -574,7 +573,6 @@ textarea {
 }
 
 .image.thumb:hover:before {
-	background: url("images/overlay.png"), url("images/overlay.png");
 	opacity: 1.0;
 }
 
@@ -592,6 +590,8 @@ textarea {
 .image.fit img {
 	width: 100%;
 }
+
+
 
 
 /* List */
@@ -2101,5 +2101,11 @@ canvas {
 		margin: 0;
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
+	}
+	section#resume.wrapper.style5.special {
+		padding: 3em 0.5em 1em 0.5em; 
+	}
+	.category-info .box .entry.inline {
+		padding-right: 0.2em;
 	}
 }
