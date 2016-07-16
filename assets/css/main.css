@@ -26,6 +26,7 @@ section {
 	display: block;
 }
 
+
 body {
 	line-height: 1;
 	font-family: 'Lora', serif;
@@ -126,6 +127,10 @@ ul {
 *:before,
 *:after {
 	box-sizing: border-box;
+}
+
+#audio-player {
+	z-index: 1000000000;
 }
 
 /* A, P, H Tags */
@@ -590,8 +595,6 @@ textarea {
 .image.fit img {
 	width: 100%;
 }
-
-
 
 
 /* List */
