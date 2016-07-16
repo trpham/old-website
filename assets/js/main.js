@@ -121,6 +121,24 @@
 
 		}
 	});
+	
+	var playing = false;
+
+    $('a#button-player').click(function() {
+        $(this).toggleClass("down");
+				$('a#button-player').css("background-color", "#dcdcdc");
+
+        if (playing == false) {
+            document.getElementById('song').play();
+            playing = true;
+            $(this).text("Stop");
+
+        } else {
+            document.getElementById('song').pause();
+            playing = false;
+            $(this).text("Play");
+        }
+    });
 
 })(jQuery);
 
